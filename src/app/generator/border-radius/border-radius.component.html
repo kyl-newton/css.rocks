@@ -2,13 +2,13 @@
   border-radius generator!
 </p>
 
-<input type="text" [ngModel]="topLeftCorner" (ngModelChange)="topLeftCorner = $event">
-<input type="text" [ngModel]="topRightCorner" (ngModelChange)="topRightCorner = $event">
-<input type="text" [ngModel]="bottomLeftCorner" (ngModelChange)="bottomLeftCorner = $event">
-<input type="text" [ngModel]="bottomRightCorner" (ngModelChange)="bottomRightCorner = $event">
+<input type="text" [ngModel]="topLeftRadius" (ngModelChange)="topLeftRadius = $event">
+<input type="text" [ngModel]="topRightRadius" (ngModelChange)="topRightRadius = $event">
+<input type="text" [ngModel]="bottomLeftRadius" (ngModelChange)="bottomLeftRadius = $event">
+<input type="text" [ngModel]="bottomRightRadius" (ngModelChange)="bottomRightRadius = $event">
 
 <div>
-  border-radius: {{topLeftCorner}} {{topRightCorner}} {{bottomLeftCorner}} {{bottomRightCorner}};
+  border-radius: {{topLeftRadius}} {{topRightRadius}} {{bottomLeftRadius}} {{bottomRightRadius}};
 </div>
 
-<div class="example"></div>
+<div class="example" [ngStyle]="{'border-top-left-radius': topLeftRadius, 'border-top-right-radius': topRightRadius, 'border-bottom-left-radius': bottomLeftRadius, 'border-bottom-right-radius': bottomRightRadius}"></div>
