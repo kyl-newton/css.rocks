@@ -1,5 +1,21 @@
+// Import Presets
 @import "assets/scss/mixins";
+
+// Import Foundation
+@import "~foundation-sites/scss/foundation";
+@import "assets/scss/settings";
+@include foundation-flex-grid;
+
+html, body {
+  height: 100%;
+}
 
 body {
   @include primary-font-regular;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  line-height: 100%;
 }

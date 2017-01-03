@@ -6,7 +6,16 @@ import {RouterModule, Routes} from "@angular/router";
 import {FormsModule} from "@angular/forms";
 
 const appRoutes: Routes = [
-  { path: 'generator', component: GeneratorComponent}
+  {
+    path: 'generator',
+    component: GeneratorComponent,
+    children: [
+      {
+        path: 'border-radius',
+        component: BorderRadiusComponent
+      }
+    ]
+  }
 ];
 
 @NgModule({

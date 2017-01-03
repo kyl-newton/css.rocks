@@ -7,8 +7,21 @@ $font-url: './assets/fonts/';
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'OpenSans';
+  src: url('#{$font-url}OpenSans-Bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
 @mixin primary-font-regular {
   font-family: 'OpenSans', sans-serif;
   font-style: normal;
   font-weight: 400;
+}
+
+@mixin primary-font-bold {
+  font-family: 'OpenSans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
 }

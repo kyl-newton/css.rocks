@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import {Routes, RouterModule} from "@angular/router";
 import {GeneratorModule} from "./generator/generator.module";
+import {CoreModule} from "./core/core.module";
 
 
 const appRoutes: Routes = [
@@ -21,8 +22,9 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
-    GeneratorModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    CoreModule,
+    GeneratorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
