@@ -1,0 +1,14 @@
+$font-url: './assets/fonts/';
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('#{$font-url}OpenSans-Regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin primary-font-regular {
+  font-family: 'OpenSans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
