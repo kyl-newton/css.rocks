@@ -6,26 +6,26 @@ import {RouterModule, Routes} from "@angular/router";
 import {FormsModule} from "@angular/forms";
 
 const appRoutes: Routes = [
-  {
-    path: 'generator',
-    component: GeneratorComponent,
-    children: [
-      {
-        path: 'border-radius',
-        component: BorderRadiusComponent
-      }
-    ]
-  }
+    {
+        path: 'generator',
+        component: GeneratorComponent,
+        children: [
+            {
+                path: 'border-radius',
+                component: BorderRadiusComponent
+            }
+        ]
+    }
 ];
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    RouterModule.forRoot(appRoutes)
-  ],
-  declarations: [GeneratorComponent, BorderRadiusComponent],
-  exports: [GeneratorComponent]
+    imports: [
+        CommonModule,
+        FormsModule,
+        RouterModule.forRoot(appRoutes)
+    ],
+    declarations: [GeneratorComponent, BorderRadiusComponent],
+    exports: [GeneratorComponent]
 })
 export class GeneratorModule {
 }

@@ -4,6 +4,7 @@
 // Import Foundation
 @import "~foundation-sites/scss/foundation";
 @import "assets/scss/settings";
+@include foundation-flex-classes;
 @include foundation-flex-grid;
 
 html, body {

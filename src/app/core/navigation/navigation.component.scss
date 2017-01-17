@@ -2,50 +2,50 @@
 @import "../../../assets/scss/mixins";
 
 nav {
-  background-color: #333333;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  width: 240px;
-  padding: 20px;
+    background-color: #333333;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 240px;
+    padding: 20px;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .tier-1 {
-  li {
-    @include primary-font-bold;
-    font-size: 12px;
-    text-transform: uppercase;
+    li {
+        @include primary-font-bold;
+        font-size: 12px;
+        text-transform: uppercase;
 
-    &:nth-child(n+2) {
-      margin-top: 20px;
+        &:nth-child(n+2) {
+            margin-top: 20px;
+        }
     }
-  }
 
-  a {
-    color: #888888;
-  }
+    a {
+        color: #888888;
+    }
 }
 
 .tier-2 {
-  li {
-    @include primary-font-regular;
-    font-size: 14px;
-    padding-top: 10px;
-    margin: 0;
-    text-transform: capitalize;
-  }
+    li {
+        @include primary-font-regular;
+        font-size: 14px;
+        padding-top: 10px;
+        margin: 0;
+        text-transform: capitalize;
+    }
 
-  a {
-    color: #dddddd;
-  }
+    a {
+        color: #dddddd;
+    }
 }
