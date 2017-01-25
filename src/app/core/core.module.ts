@@ -1,6 +1,5 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {TopBarComponent} from './top-bar/top-bar.component';
 import {NavigationComponent} from './navigation/navigation.component';
 import {RouterModule} from "@angular/router";
 
@@ -9,8 +8,8 @@ import {RouterModule} from "@angular/router";
         CommonModule,
         RouterModule
     ],
-    declarations: [TopBarComponent, NavigationComponent],
-    exports: [TopBarComponent, NavigationComponent]
+    declarations: [NavigationComponent],
+    exports: [NavigationComponent]
 })
 export class CoreModule {
 }

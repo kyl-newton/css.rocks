@@ -1,13 +1,10 @@
-<nav>
-    <ul class="tier-1">
-        <li><a routerLink="/">Home</a></li>
-        <li>
-            <a routerLink="/generator">Generator</a>
-            <ul class="tier-2">
-                <li>
-                    <a routerLink="/generator/border-radius">Border Radius</a>
-                </li>
-            </ul>
-        </li>
-    </ul>
-</nav>
+<div class="top-bar">
+    <div class="logo">css.rocks</div>
+    <nav>
+        <ul class="tier-1">
+            <li><a routerLink="/" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact:true}">Home</a></li>
+            <li><a routerLink="/generator" routerLinkActive="is-active">Generator</a></li>
+            <li><a routerLink="/blog" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact:true}">Blog</a></li>
+        </ul>
+    </nav>
+</div>

@@ -1,13 +1,8 @@
-<div class="row collapse">
-    <div class="columns">
-        <app-top-bar></app-top-bar>
-    </div>
-</div>
-<div class="wrapper">
-    <div class="navigation">
+<div class="flex-container flex-dir-column">
+    <div class="flex-child-shrink">
         <app-navigation></app-navigation>
     </div>
-    <div class="body">
+    <div class="flex-child-grow">
         <router-outlet></router-outlet>
     </div>
 </div>

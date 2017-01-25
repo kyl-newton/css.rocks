@@ -4,6 +4,8 @@ import {BorderRadiusComponent} from './border-radius/border-radius.component';
 import {GeneratorComponent} from "./generator.component";
 import {RouterModule, Routes} from "@angular/router";
 import {FormsModule} from "@angular/forms";
+import {SharedModule} from "../shared/shared.module";
+import { EditorComponent } from './editor/editor.component';
 
 const appRoutes: Routes = [
     {
@@ -22,9 +24,10 @@ const appRoutes: Routes = [
     imports: [
         CommonModule,
         FormsModule,
-        RouterModule.forRoot(appRoutes)
+        RouterModule.forRoot(appRoutes),
+        SharedModule
     ],
-    declarations: [GeneratorComponent, BorderRadiusComponent],
+    declarations: [GeneratorComponent, BorderRadiusComponent, EditorComponent],
     exports: [GeneratorComponent]
 })
 export class GeneratorModule {

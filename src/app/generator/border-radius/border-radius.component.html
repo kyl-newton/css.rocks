@@ -1,10 +1,50 @@
 <div class="row">
     <div class="small-12 medium-6 large-4 columns">
         <div class="input">
-            <input type="text" [ngModel]="topLeftRadius" (ngModelChange)="topLeftRadius = $event">
-            <input type="text" [ngModel]="topRightRadius" (ngModelChange)="topRightRadius = $event">
-            <input type="text" [ngModel]="bottomLeftRadius" (ngModelChange)="bottomLeftRadius = $event">
-            <input type="text" [ngModel]="bottomRightRadius" (ngModelChange)="bottomRightRadius = $event">
+            <div>
+                <app-button-group>
+                    <app-button [buttonText]="'px'"></app-button>
+                    <app-button [buttonText]="'%'"></app-button>
+                    <app-button [buttonText]="'em'"></app-button>
+                    <app-button [buttonText]="'rem'"></app-button>
+                </app-button-group>
+            </div>
+            <div>
+                <input type="text" [ngModel]="topLeftRadius" (ngModelChange)="topLeftRadius = $event">
+                <app-button-group>
+                    <app-button [buttonText]="'px'"></app-button>
+                    <app-button [buttonText]="'%'"></app-button>
+                    <app-button [buttonText]="'em'"></app-button>
+                    <app-button [buttonText]="'rem'"></app-button>
+                </app-button-group>
+            </div>
+            <div>
+                <input type="text" [ngModel]="topRightRadius" (ngModelChange)="topRightRadius = $event">
+                <app-button-group>
+                    <app-button [buttonText]="'px'"></app-button>
+                    <app-button [buttonText]="'%'"></app-button>
+                    <app-button [buttonText]="'em'"></app-button>
+                    <app-button [buttonText]="'rem'"></app-button>
+                </app-button-group>
+            </div>
+            <div>
+                <input type="text" [ngModel]="bottomLeftRadius" (ngModelChange)="bottomLeftRadius = $event">
+                <app-button-group>
+                    <app-button [buttonText]="'px'"></app-button>
+                    <app-button [buttonText]="'%'"></app-button>
+                    <app-button [buttonText]="'em'"></app-button>
+                    <app-button [buttonText]="'rem'"></app-button>
+                </app-button-group>
+            </div>
+            <div>
+                <input type="text" [ngModel]="bottomRightRadius" (ngModelChange)="bottomRightRadius = $event">
+                <app-button-group>
+                    <app-button [buttonText]="'px'"></app-button>
+                    <app-button [buttonText]="'%'"></app-button>
+                    <app-button [buttonText]="'em'"></app-button>
+                    <app-button [buttonText]="'rem'"></app-button>
+                </app-button-group>
+            </div>
         </div>
     </div>
     <div class="small-12 medium-6 large-4 columns">
