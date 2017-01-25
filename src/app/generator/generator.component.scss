@@ -14,3 +14,8 @@ nav {
 ul {
     @include reset-ul;
 }
+
+a {
+    @include reset-a;
+    color: $secondary-color;
+}

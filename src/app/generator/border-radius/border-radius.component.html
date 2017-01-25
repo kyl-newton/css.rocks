@@ -1,63 +1,64 @@
-<div class="row">
-    <div class="small-12 medium-6 large-4 columns">
-        <div class="input">
-            <div>
-                <app-button-group>
-                    <app-button [buttonText]="'px'"></app-button>
-                    <app-button [buttonText]="'%'"></app-button>
-                    <app-button [buttonText]="'em'"></app-button>
-                    <app-button [buttonText]="'rem'"></app-button>
-                </app-button-group>
-            </div>
-            <div>
-                <input type="text" [ngModel]="topLeftRadius" (ngModelChange)="topLeftRadius = $event">
-                <app-button-group>
-                    <app-button [buttonText]="'px'"></app-button>
-                    <app-button [buttonText]="'%'"></app-button>
-                    <app-button [buttonText]="'em'"></app-button>
-                    <app-button [buttonText]="'rem'"></app-button>
-                </app-button-group>
-            </div>
-            <div>
-                <input type="text" [ngModel]="topRightRadius" (ngModelChange)="topRightRadius = $event">
-                <app-button-group>
-                    <app-button [buttonText]="'px'"></app-button>
-                    <app-button [buttonText]="'%'"></app-button>
-                    <app-button [buttonText]="'em'"></app-button>
-                    <app-button [buttonText]="'rem'"></app-button>
-                </app-button-group>
-            </div>
-            <div>
-                <input type="text" [ngModel]="bottomLeftRadius" (ngModelChange)="bottomLeftRadius = $event">
-                <app-button-group>
-                    <app-button [buttonText]="'px'"></app-button>
-                    <app-button [buttonText]="'%'"></app-button>
-                    <app-button [buttonText]="'em'"></app-button>
-                    <app-button [buttonText]="'rem'"></app-button>
-                </app-button-group>
-            </div>
-            <div>
-                <input type="text" [ngModel]="bottomRightRadius" (ngModelChange)="bottomRightRadius = $event">
-                <app-button-group>
-                    <app-button [buttonText]="'px'"></app-button>
-                    <app-button [buttonText]="'%'"></app-button>
-                    <app-button [buttonText]="'em'"></app-button>
-                    <app-button [buttonText]="'rem'"></app-button>
-                </app-button-group>
-            </div>
-        </div>
-    </div>
-    <div class="small-12 medium-6 large-4 columns">
-        <div class="output">
-            <code>
-                border-radius: {{topLeftRadius}} {{topRightRadius}} {{bottomLeftRadius}} {{bottomRightRadius}};
-            </code>
-        </div>
-    </div>
-    <div class="small-12 large-4 columns">
-        <div class="preview">
-            <div class="example"
-                 [ngStyle]="{'border-top-left-radius': topLeftRadius, 'border-top-right-radius': topRightRadius, 'border-bottom-left-radius': bottomLeftRadius, 'border-bottom-right-radius': bottomRightRadius}"></div>
-        </div>
-    </div>
-</div>
+<app-editor></app-editor>
+<!--<div class="row">-->
+    <!--<div class="small-12 medium-6 large-4 columns">-->
+        <!--<div class="input">-->
+            <!--<div>-->
+                <!--<app-button-group>-->
+                    <!--<app-button [buttonText]="'px'"></app-button>-->
+                    <!--<app-button [buttonText]="'%'"></app-button>-->
+                    <!--<app-button [buttonText]="'em'"></app-button>-->
+                    <!--<app-button [buttonText]="'rem'"></app-button>-->
+                <!--</app-button-group>-->
+            <!--</div>-->
+            <!--<div>-->
+                <!--<input type="text" [ngModel]="topLeftRadius" (ngModelChange)="topLeftRadius = $event">-->
+                <!--<app-button-group>-->
+                    <!--<app-button [buttonText]="'px'"></app-button>-->
+                    <!--<app-button [buttonText]="'%'"></app-button>-->
+                    <!--<app-button [buttonText]="'em'"></app-button>-->
+                    <!--<app-button [buttonText]="'rem'"></app-button>-->
+                <!--</app-button-group>-->
+            <!--</div>-->
+            <!--<div>-->
+                <!--<input type="text" [ngModel]="topRightRadius" (ngModelChange)="topRightRadius = $event">-->
+                <!--<app-button-group>-->
+                    <!--<app-button [buttonText]="'px'"></app-button>-->
+                    <!--<app-button [buttonText]="'%'"></app-button>-->
+                    <!--<app-button [buttonText]="'em'"></app-button>-->
+                    <!--<app-button [buttonText]="'rem'"></app-button>-->
+                <!--</app-button-group>-->
+            <!--</div>-->
+            <!--<div>-->
+                <!--<input type="text" [ngModel]="bottomLeftRadius" (ngModelChange)="bottomLeftRadius = $event">-->
+                <!--<app-button-group>-->
+                    <!--<app-button [buttonText]="'px'"></app-button>-->
+                    <!--<app-button [buttonText]="'%'"></app-button>-->
+                    <!--<app-button [buttonText]="'em'"></app-button>-->
+                    <!--<app-button [buttonText]="'rem'"></app-button>-->
+                <!--</app-button-group>-->
+            <!--</div>-->
+            <!--<div>-->
+                <!--<input type="text" [ngModel]="bottomRightRadius" (ngModelChange)="bottomRightRadius = $event">-->
+                <!--<app-button-group>-->
+                    <!--<app-button [buttonText]="'px'"></app-button>-->
+                    <!--<app-button [buttonText]="'%'"></app-button>-->
+                    <!--<app-button [buttonText]="'em'"></app-button>-->
+                    <!--<app-button [buttonText]="'rem'"></app-button>-->
+                <!--</app-button-group>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="small-12 medium-6 large-4 columns">-->
+        <!--<div class="output">-->
+            <!--<code>-->
+                <!--border-radius: {{topLeftRadius}} {{topRightRadius}} {{bottomLeftRadius}} {{bottomRightRadius}};-->
+            <!--</code>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="small-12 large-4 columns">-->
+        <!--<div class="preview">-->
+            <!--<div class="example"-->
+                 <!--[ngStyle]="{'border-top-left-radius': topLeftRadius, 'border-top-right-radius': topRightRadius, 'border-bottom-left-radius': bottomLeftRadius, 'border-bottom-right-radius': bottomRightRadius}"></div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
